@@ -1,0 +1,10 @@
+float phong_weightCalc(
+    in vec3 light_pos, // light position
+    in vec3 frag_normal // geometry normal
+) {
+    // returns vec2( ambientMult, diffuseMult )
+    float n_dot_pos = max( 0.0, dot(
+        frag_normal, light_pos
+    ));
+    return n_dot_pos;
+}

@@ -1,0 +1,12 @@
+This project requires the following libraries to be installed via pip:
+pygame
+numpy
+PyOpenGL
+PyOpenGL_accelerate
+
+The project also requires another library to be installed with special instructions.
+
+1. Install pyassimp via pip
+2. Move "assimp-vc140-mt.dll" to the directory pyassimp was installed in. This is usually <PythonInstallation>/Lib/site-packages/pyassimp/
+
+The project should be able to run smoothly.

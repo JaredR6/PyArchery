@@ -1,0 +1,9 @@
+attribute vec3 Vertex_position;
+attribute vec2 Vertex_texcoords;
+varying vec2 texCoords;
+void main() {
+    gl_Position = gl_ModelViewProjectionMatrix * vec4(
+        Vertex_position, 1.0
+    );
+    texCoords = Vertex_texcoords;
+}

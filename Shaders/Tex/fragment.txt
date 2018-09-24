@@ -1,0 +1,7 @@
+uniform sampler2D Material_texture;
+uniform float saturation;
+varying vec2 texCoords;
+void main() {
+    vec4 tex = texture(Material_texture, texCoords);
+    gl_FragColor = vec4(tex.rgb * saturation, tex.a);
+}
